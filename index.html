@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Loja de Laptops de Alta Qualidade - Novela Tech Soluctions. Encontre os melhores laptops para todas as necessidades.">
+    <meta name="keywords" content="laptops, tecnologia, loja, Moçambique">
+    <meta name="author" content="Laptops Novela Tech Soluctions">
+    <title>Loja de Laptops - Novela Tech Soluctions</title>
+
+    <!-- Link para o CSS do Bootstrap atualizado -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para ícones do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">N.T.S</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html"> <i class="bi bi-cart"></i> Carrinho (<span id="contadorCarrinho">0</span>)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel Principal -->
+    <main class="home-banner">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/banners/banner-01.png" class="d-block w-100" alt="Imagem de Apresentação">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/banners/banner-02.png" class="d-block w-100" alt="Imagem de Apresentação">
+
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Laptops Em Destaque</h2>
+            <div class="row">
+                <!-- Produto 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/images/laptops/laptop-1.jpeg" class="card-img-top"
+                            alt="LENOVO - Thinkpad T14s Gen 2 (11ª Geração)">
+                        <div class="card-body">
+                            <h5 class="card-title">LENOVO - Thinkpad T14s Gen 2 (11ª Geração)</h5>
+                            <p class="card-text">Touchscreen 14" FHD, Intel Core i5-1145G7U, 16GB RAM, SSD 512GB, Intel
+                                Iris Xe, Windows 11 Pro, Teclado retroiluminado, Dark Black Carbon.</p>
+                            <p class="text-primary fw-bold">35.500 MZN</p>
+                        </div>
+                        <div class="card-footer">
+                            <button
+                                onclick="abrirModalConfirmacao('LENOVO - Thinkpad T14s Gen 2 (11ª Geração)', 35500 )"
+                                class="btn btn-primary w-100">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/images/laptops/laptop-3.jpeg" class="card-img-top" alt="Dell Latitude 5420 11th Gen intel(R) Core(TM) I7 -1145G7">
+                        <div class="card-body">
+                            <h5 class="card-title">Dell Latitude 5420 11th Gen intel(R) Core(TM) I7 -1145G7 </h5>
+                            <p class="card-text">14" FHD Anti-Glare, Intel Core i7-1145G7, 16GB RAM, 256GB SSD, Intel
+                                Iris Xe, USB-C, HDMI, Leitor biométrico e Face ID, Windows 10 Pro.</p>
+                            <p class="text-primary fw-bold">32.000 MZN</p>
+                        </div>
+                        <div class="card-footer">
+                            <button onclick="abrirModalConfirmacao('Dell Latitude 5420 11th Gen intel(R) Core(TM) I7 -1145G7', 32000)"
+                                class="btn btn-primary w-100">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/images/laptops/laptop-2.jpeg" class="card-img-top" alt="Lenovo ThinkPad E14 Gen 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Lenovo ThinkPad E14 Gen 2 (Super promoção). </h5>
+                            <p class="card-text">14" FHD, Intel Core i5-1135G7, 16GB RAM, 512GB SSD, Intel Iris Xe, USB 3.0, HDMI, Leitor de Cartão SIM, Windows 10 Pro, Bateria de 8h.</p>
+                            <p class="text-primary fw-bold">27.000 MZN</p>
+                        </div>
+                        <div class="card-footer">
+                            <button onclick="abrirModalConfirmacao('Lenovo ThinkPad E14 Gen 2', 27000)"
+                                class="btn btn-primary w-100">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="#about">
+        <div class="container my-5 about-section">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="text-center mb-5">Sobre Nós</h2>
+                    <p class="lead">
+                        Somos uma empresa dedicada à venda de laptops de alta qualidade, oferecendo uma experiência
+                        excepcional aos nossos clientes.
+                    </p>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-briefcase about-icon me-3"></i>
+                        <p>Nossa missão é fornecer tecnologia de ponta que atenda às necessidades de todos os usuários.
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-users about-icon me-3"></i>
+                        <p>Temos uma equipe de especialistas apaixonados prontos para ajudar na escolha do laptop ideal.
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-leaf about-icon me-3"></i>
+                        <p>Estamos comprometidos com a sustentabilidade e práticas de negócios éticas.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/about-image.jpg" alt="Nossa equipe" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+        <section id="payment-methods" class="py-5"">
+            <div class="container">
+              <h2 class="text-center mb-4">Métodos de Pagamento</h2>
+              <h3 class="text-center mb-5">Aceitamos uma variedade de métodos de pagamento para facilitar suas compras.</h3>
+              <div class="row justify-content-center">
+                <div class="col-6 col-md-3 mb-4 text-center">
+                  <div class="card shadow-sm border-light rounded">
+                    <div class="card-body">
+                      <img src="assets/images/metodos-pagamentos/logo-mpsa.png" class="img-fluid mb-3" alt="Visa" style="max-width: 80px;">
+                      <p class="card-text">M-Pesa</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4 text-center">
+                  <div class="card shadow-sm border-light rounded">
+                    <div class="card-body">
+                      <img src="assets/images/metodos-pagamentos/emola-logo.jpg" class="img-fluid mb-3" alt="MasterCard" style="max-width: 80px;">
+                      <p class="card-text">E-Mola</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 mb-4 text-center">
+                  <div class="card shadow-sm border-light rounded">
+                    <div class="card-body">
+                      <img src="assets/images/metodos-pagamentos/logo-standarbank.jpg"class="img-fluid mb-3" alt="PayPal" style="max-width: 80px;">
+                      <p class="card-text">Conta Bancária</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          
+          
+    </section>
+
+
+    <section id="contact">
+
+        <div class="container py-5">
+            <h2 class="text-center mb-5">Entre em Contato</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-card p-4">
+                        <h4>Nos Envie uma Mensagem</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Seu email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Sua mensagem"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-info p-4">
+                        <h4>Informações de Contato</h4>
+                        <p><strong>Telefone:</strong> +25884446542</p>
+                        <p><strong>Email:</strong> contato@seudominio.com</p>
+                        <p><strong>Endereço:</strong> Sofala, Cidade da Beira, Moçaambique</p>
+                        <h5>Siga-nos nas Redes Sociais</h5>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" target="_blank" class="social-icon me-2"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com" target="_blank" class="social-icon me-2"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.twitter.com" target="_blank" class="social-icon me-2"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nós</h5>
+                    <p>Somos uma empresa dedicada a oferecer os melhores laptops com qualidade e segurança. Nossa missão
+                        é proporcionar tecnologia acessível a todos.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p><strong>Telefone:</strong> +25884446542</p>
+                    <p><strong>Email:</strong> contato@seudominio.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <a href="https://www.facebook.com" target="_blank" class="text-white me-2"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="text-white me-2"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="text-white me-2"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="text-white"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div>
+                <p>&copy; 2024 Novela Tech Soluctions. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+
+    <!-- Modal de Confirmação -->
+    <div class="modal fade" id="modalConfirmacao" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Confirmação</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Deseja realmente adicionar o <span id="produtoModal"></span> ao carrinho por <span
+                        id="precoModal"></span> MZN?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                    <button type="button" class="btn btn-success" onclick="confirmarAdicao()">Sim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Scripts -->
+    <script>
+
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
