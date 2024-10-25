@@ -24,7 +24,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
         <div class="container">
-            <a class="navbar-brand logo" href="#">N.T.S</a>
+            <a class="navbar-brand logo" href="#">T.P.S</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,11 +34,16 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Início</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#produtos">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="carrinho.html"> <i class="bi bi-cart"></i> Carrinho (<span id="contadorCarrinho">0</span>)</a>
+                        <a class="nav-link " aria-current="page" href="#sobre">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html"> <i class="bi bi-cart"></i> Carrinho (<span
+                                id="contadorCarrinho">0</span>)</a>
                     </li>
                 </ul>
             </div>
@@ -79,8 +84,8 @@
             <h2 class="text-center mb-5">Laptops Em Destaque</h2>
             <div class="row">
                 <!-- Produto 1 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-60">
+                <div class="col-lg-4 col-md-6  mb-4">
+                    <div class="card">
                         <img src="assets/images/laptops/laptop-1.jpg" class="card-img-top"
                             alt="LENOVO - Thinkpad T14s Gen 2 (11ª Geração)">
                         <div class="card-body">
@@ -93,14 +98,16 @@
                             <button
                                 onclick="abrirModalConfirmacao('LENOVO - Thinkpad T14s Gen 2 (11ª Geração)', 35500 )"
                                 class="btn btn-primary w-100">Adicionar ao Carrinho</button>
+                            <button class="btn btn-dark w-100 my-2">Ver Laptop</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Produto 2 -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-60">
-                        <img src="assets/images/laptops/laptop-2.jpg" class="card-img-top" alt="Dell Latitude 5420 11th Gen intel(R) Core(TM) I7 -1145G7">
+                <div class="col-lg-4 col-md-6 mb-4 ">
+                    <div class="card h-100">
+                        <img src="assets/images/laptops/laptop-2.jpg" class="card-img-top"
+                            alt="Dell Latitude 5420 11th Gen intel(R) Core(TM) I7 -1145G7">
                         <div class="card-body">
                             <h5 class="card-title">Dell Latitude 5420 11th Gen intel(R) Core(TM) I7 -1145G7 </h5>
                             <p class="card-text">14" FHD Anti-Glare, Intel Core i7-1145G7, 16GB RAM, 256GB SSD, Intel
@@ -108,24 +115,86 @@
                             <p class="text-primary fw-bold">32.000 MZN</p>
                         </div>
                         <div class="card-footer">
-                            <button onclick="abrirModalConfirmacao('Dell Latitude 5420 11th Gen intel(R) Core(TM) I7 -1145G7', 32000)"
+                            <button
+                                onclick="abrirModalConfirmacao('Dell Latitude 5420 11th Gen intel(R) Core(TM) I7 -1145G7', 32000)"
                                 class="btn btn-primary w-100">Adicionar ao Carrinho</button>
+                            <button class="btn btn-dark w-100 my-2">Ver Laptop</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Produto 3 -->
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-60">
-                        <img src="assets/images/laptops/laptop-03.jpg" class="card-img-top" alt="Lenovo ThinkPad E14 Gen 2">
+                    <div class="card h-100">
+                        <img src="assets/images/laptops/laptop-03.jpg" class="card-img-top"
+                            alt="Lenovo ThinkPad E14 Gen 2">
                         <div class="card-body">
                             <h5 class="card-title">Lenovo ThinkPad E14 Gen 2 (Super promoção). </h5>
-                            <p class="card-text">14" FHD, Intel Core i5-1135G7, 16GB RAM, 512GB SSD, Intel Iris Xe, USB 3.0, HDMI, Leitor de Cartão SIM, Windows 10 Pro, Bateria de 8h.</p>
+                            <p class="card-text">14" FHD, Intel Core i5-1135G7, 16GB RAM, 512GB SSD, Intel Iris Xe, USB
+                                3.0, HDMI, Leitor de Cartão SIM, Windows 10 Pro, Bateria de 8h.</p>
                             <p class="text-primary fw-bold">27.000 MZN</p>
                         </div>
                         <div class="card-footer">
                             <button onclick="abrirModalConfirmacao('Lenovo ThinkPad E14 Gen 2', 27000)"
                                 class="btn btn-primary w-100">Adicionar ao Carrinho</button>
+                            <button class="btn btn-dark w-100 my-2">Ver Laptop</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/images/laptops/laptop-03.jpg" class="card-img-top"
+                            alt="Lenovo ThinkPad E14 Gen 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Lenovo ThinkPad E14 Gen 2 (Super promoção). </h5>
+                            <p class="card-text">14" FHD, Intel Core i5-1135G7, 16GB RAM, 512GB SSD, Intel Iris Xe, USB
+                                3.0, HDMI, Leitor de Cartão SIM, Windows 10 Pro, Bateria de 8h.</p>
+                            <p class="text-primary fw-bold">27.000 MZN</p>
+                        </div>
+                        <div class="card-footer">
+                            <button onclick="abrirModalConfirmacao('Lenovo ThinkPad E14 Gen 2', 27000)"
+                                class="btn btn-primary w-100">Adicionar ao Carrinho</button>
+                            <button class="btn btn-dark w-100 my-2">Ver Laptop</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/images/laptops/laptop-03.jpg" class="card-img-top"
+                            alt="Lenovo ThinkPad E14 Gen 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Lenovo ThinkPad E14 Gen 2 (Super promoção). </h5>
+                            <p class="card-text">14" FHD, Intel Core i5-1135G7, 16GB RAM, 512GB SSD, Intel Iris Xe, USB
+                                3.0, HDMI, Leitor de Cartão SIM, Windows 10 Pro, Bateria de 8h.</p>
+                            <p class="text-primary fw-bold">27.000 MZN</p>
+                        </div>
+                        <div class="card-footer">
+                            <button onclick="abrirModalConfirmacao('Lenovo ThinkPad E14 Gen 2', 27000)"
+                                class="btn btn-primary w-100">Adicionar ao Carrinho</button>
+                            <button class="btn btn-dark w-100 my-2">Ver Laptop</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="assets/images/laptops/laptop-03.jpg" class="card-img-top"
+                            alt="Lenovo ThinkPad E14 Gen 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Lenovo ThinkPad E14 Gen 2 (Super promoção). </h5>
+                            <p class="card-text">14" FHD, Intel Core i5-1135G7, 16GB RAM, 512GB SSD, Intel Iris Xe, USB
+                                3.0, HDMI, Leitor de Cartão SIM, Windows 10 Pro, Bateria de 8h.</p>
+                            <p class="text-primary fw-bold">27.000 MZN</p>
+                        </div>
+                        <div class="card-footer">
+                            <button onclick="abrirModalConfirmacao('Lenovo ThinkPad E14 Gen 2', 27000)"
+                                class="btn btn-primary w-100">Adicionar ao Carrinho</button>
+                            <button class="btn btn-dark w-100 my-2">Ver Laptop</button>
                         </div>
                     </div>
                 </div>
@@ -133,11 +202,11 @@
         </div>
     </section>
 
-    <section class="#about">
+    <section id="sobre" class=" text-center">
         <div class="container my-5 about-section">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <h2 class="text-center mb-5">Sobre Nós</h2>
+                    <h2 class=" mb-5">Sobre Nós</h2>
                     <p class="lead">
                         Somos uma empresa dedicada à venda de laptops de alta qualidade, oferecendo uma experiência
                         excepcional aos nossos clientes.
@@ -164,41 +233,45 @@
         </div>
     </section>
 
-   
-        <section id="payment-methods" class="py-5"">
-            <div class="container">
-              <h2 class="text-center mb-4">Métodos de Pagamento</h2>
-              <h3 class="text-center mb-5">Aceitamos uma variedade de métodos de pagamento para facilitar suas compras.</h3>
-              <div class="row justify-content-center">
+
+    <section id="payment-methods" class="py-5">
+        <div class=" container">
+            <h2 class="text-center mb-4">Métodos de Pagamento</h2>
+            <h3 class="text-center mb-5">Aceitamos uma variedade de métodos de pagamento para facilitar suas compras.
+            </h3>
+            <div class="row justify-content-center">
                 <div class="col-6 col-md-3 mb-4 text-center">
-                  <div class="card shadow-sm border-light rounded">
-                    <div class="card-body">
-                      <img src="assets/images/metodos-pagamentos/logo-mpsa.png" class="img-fluid mb-3" alt="Visa" style="max-width: 80px;">
-                      <p class="card-text">M-Pesa</p>
+                    <div class="card shadow-sm border-light rounded">
+                        <div class="card-body">
+                            <img src="assets/images/metodos-pagamentos/logo-mpsa.png" class="img-fluid mb-3" alt="Visa"
+                                style="max-width: 80px;">
+                            <p class="card-text">M-Pesa</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div class="col-6 col-md-3 mb-4 text-center">
-                  <div class="card shadow-sm border-light rounded">
-                    <div class="card-body">
-                      <img src="assets/images/metodos-pagamentos/emola-logo.jpg" class="img-fluid mb-3" alt="MasterCard" style="max-width: 80px;">
-                      <p class="card-text">E-Mola</p>
+                    <div class="card shadow-sm border-light rounded">
+                        <div class="card-body">
+                            <img src="assets/images/metodos-pagamentos/emola-logo.jpg" class="img-fluid mb-3"
+                                alt="MasterCard" style="max-width: 80px;">
+                            <p class="card-text">E-Mola</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
                 <div class="col-6 col-md-3 mb-4 text-center">
-                  <div class="card shadow-sm border-light rounded">
-                    <div class="card-body">
-                      <img src="assets/images/metodos-pagamentos/logo-standarbank.jpg"class="img-fluid mb-3" alt="PayPal" style="max-width: 80px;">
-                      <p class="card-text">Conta Bancária</p>
+                    <div class="card shadow-sm border-light rounded">
+                        <div class="card-body">
+                            <img src="assets/images/metodos-pagamentos/logo-standarbank.jpg" class="img-fluid mb-3"
+                                alt="PayPal" style="max-width: 80px;">
+                            <p class="card-text">Conta Bancária</p>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-        
-          
-          
+        </div>
+
+
+
     </section>
 
 
@@ -231,9 +304,9 @@
                 <div class="col-md-6">
                     <div class="contact-info p-4">
                         <h4>Informações de Contato</h4>
-                        <p><strong>Telefone:</strong> +25884446542</p>
-                        <p><strong>Email:</strong> contato@seudominio.com</p>
-                        <p><strong>Endereço:</strong> Sofala, Cidade da Beira, Moçaambique</p>
+                        <p><strong>Telefone:</strong> +25884446042</p>
+                        <p><strong>Email:</strong> alfredo.novela@outlook.com</p>
+                        <p><strong>Endereço:</strong> Sofala, Cidade da Beira, Moçambique</p>
                         <h5>Siga-nos nas Redes Sociais</h5>
                         <div class="social-icons">
                             <a href="https://www.facebook.com" target="_blank" class="social-icon me-2"><i
@@ -264,8 +337,8 @@
                 </div>
                 <div class="col-md-4">
                     <h5>Contato</h5>
-                    <p><strong>Telefone:</strong> +25884446542</p>
-                    <p><strong>Email:</strong> contato@seudominio.com</p>
+                    <p><strong>Telefone:</strong> +25884446042</p>
+                    <p><strong>Email:</strong> alfredo.novela@outlook.com</p>
                 </div>
                 <div class="col-md-4">
                     <h5>Redes Sociais</h5>
