@@ -1,48 +1,55 @@
 /* Estilos Gerais */
-body {
-    background-color: #f4f4f4;
-    /* Cor de fundo suave */
-}
 
 .logo {
-    font-family: 'Arial', sans-serif; /* Você pode escolher outra fonte, se preferir */
-    font-size: 2rem; /* Tamanho da fonte */
-    font-weight: bold; /* Negrito */
-    color: #007bff; /* Cor do texto */
-    text-transform: uppercase; /* Maiúsculas */
-    letter-spacing: 2px; /* Espaçamento entre letras */
-    transition: color 0.3s ease; /* Efeito de transição suave */
-  }
+    font-family: 'Arial', sans-serif;
+    /* Você pode escolher outra fonte, se preferir */
+    font-size: 2rem;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Negrito */
+
+    text-transform: uppercase;
+    /* Maiúsculas */
+    letter-spacing: 2px;
+    /* Espaçamento entre letras */
+    transition: color 0.3s ease;
+    /* Efeito de transição suave */
+}
 
 
-  
-  .logo:hover {
-    color: white; /* Cor ao passar o mouse */
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
-  }
+
+
 
 #produtos {
     background: #ccc;
 }
 
 .about-icon {
+    padding-left: 10px;
     font-size: 40px;
-    color: #007bff;
+    color: black;
     /* Cor do ícone */
 }
 
 .about-section {
-    background-color: #f8f9fa;
+    background: #007bff;
     /* Cor de fundo */
     padding: 50px 0;
     border-radius: 10px;
     /* Cantos arredondados */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+
     /* Sombra */
 }
 
+.about-section p {
+    font-weight: 400;
+}
+
 .rounded-circle {
-    border: 5px solid #007bff;
+    border: 5px solid white;
+    ;
     /* Borda azul */
 }
 
@@ -52,29 +59,30 @@ body {
     background-color: #ccc;
 }
 
-#payment-methods{
+#payment-methods {
     background-color: #343a40;
-   
+
 
 }
+
 #payment-methods h2 {
     font-size: 2.5rem;
     color: white;
     font-weight: 300;
-  }
-  
-  #payment-methods h3 {
+}
+
+#payment-methods h3 {
     font-size: 1.2rem;
     color: white;
-  }
-  
-  .card {
+}
+
+.pay {
     transition: transform 0.2s;
-  }
-  
-  .card:hover {
+}
+
+.pay:hover {
     transform: scale(1.05);
-  }
+}
 
 
 
